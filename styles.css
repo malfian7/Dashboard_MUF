@@ -361,6 +361,10 @@ button.pill:active { transform: scale(.97); }
 
 /* ---------- Footer ---------- */
 .foot { display: flex; justify-content: space-between; gap: 8px 16px; flex-wrap: wrap; padding: 8px 4px 0; font-size: 12px; color: var(--muted); }
+.foot-link { display: inline-block; padding: 4px 6px; margin: -4px 0; border-radius: 8px; font-weight: 600; color: var(--blue-d); text-decoration: none; transition: background .15s, color .15s; }
+.foot-link:hover { background: rgba(30, 79, 224, .08); text-decoration: underline; text-underline-offset: 3px; }
+.foot-link:active { transform: scale(.97); }
+.foot-sep { margin: 0 2px; color: var(--ghost); }
 
 /* ==========================================================
    OVERLAYS

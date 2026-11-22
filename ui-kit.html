@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UI Kit — Beyond Client · MUF Telesales</title>
+<meta name="description" content="UI Kit for the Beyond Client MUF Telesales dashboard: design tokens, typography and every component in one place.">
+<meta name="theme-color" content="#0F1B3D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23FFE27A'/%3E%3Cstop offset='1' stop-color='%23FFB800'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='36' height='36' rx='11' fill='url(%23g)'/%3E%3Ctext x='18' y='25' font-family='Poppins,Arial' font-weight='700' font-size='20' text-anchor='middle' fill='%230F1B3D'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="ui-kit.css">
+</head>
+<body class="kit">
+<div class="kit-page">
+  <div class="glow glow-sun" aria-hidden="true"></div>
+  <div class="glow glow-cyan" aria-hidden="true"></div>
+  <div class="glow glow-sun2" aria-hidden="true"></div>
+
+  <div class="kit-shell">
+    <header class="nav kit-bar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">B</div>
+        <div class="brand-t">
+          <div class="brand-n">Beyond Client</div>
+          <div class="brand-s">UI Kit · MUF Telesales Dashboard</div>
+        </div>
+      </div>
+      <div class="nav-right">
+        <span class="kit-ver">v1.0</span>
+        <a class="btn-logout kit-back" id="kitBack" href="index.html">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 8H3M7 4 3 8l4 4"/></svg>
+          Back to dashboard
+        </a>
+      </div>
+    </header>
+
+    <div class="kit-grid">
+      <!-- ============ SIDEBAR ============ -->
+      <aside class="kit-side" aria-label="UI Kit sections">
+        <div>
+          <h4>Start</h4>
+          <nav><a href="#overview">Overview</a></nav>
+        </div>
+        <div>
+          <h4>Foundations</h4>
+          <nav>
+            <a href="#colors">Colors</a>
+            <a href="#typography">Typography</a>
+            <a href="#shape">Radius &amp; spacing</a>
+            <a href="#elevation">Elevation</a>
+            <a href="#motion">Motion</a>
+          </nav>
+        </div>
+        <div>
+          <h4>Components</h4>
+          <nav>
+            <a href="#buttons">Buttons</a>
+            <a href="#forms">Form fields</a>
+            <a href="#badges">Chips &amp; badges</a>
+            <a href="#tabs">Tabs</a>
+            <a href="#navigation">Navigation bar</a>
+            <a href="#kpi">KPI cards</a>
+            <a href="#tiles">Time tiles</a>
+            <a href="#tables">Tables</a>
+            <a href="#heatmap">Heatmap</a>
+            <a href="#charts">Charts</a>
+            <a href="#overlays">Overlays</a>
+            <a href="#loading">Loading</a>
+            <a href="#icons">Icons</a>
+          </nav>
+        </div>
+      </aside>
+
+      <main class="kit-main" id="main">
+
+        <!-- ============ OVERVIEW ============ -->
+        <section class="kit-sec" id="overview">
+          <div class="kit-hero">
+            <div class="eyebrow">Design system</div>
+            <h1>One kit for the whole MUF Telesales dashboard.</h1>
+            <p>Every swatch, type style and component below is rendered with the dashboard's own <code>styles.css</code>, so what you see here is exactly what ships. Click any colour to copy its value, and hover or focus the components to try their states.</p>
+            <div class="kit-stats" id="kitStats">
+              <div class="kit-stat"><b data-stat="colors">–</b><span>Color tokens</span></div>
+              <div class="kit-stat"><b>2</b><span>Typefaces</span></div>
+              <div class="kit-stat"><b>13</b><span>Components</span></div>
+              <div class="kit-stat"><b>0</b><span>Build steps</span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ COLORS ============ -->
+        <section class="kit-sec" id="colors">
+          <header>
+            <div class="eyebrow">Foundations</div>
+            <h2>Colors</h2>
+            <p>A navy-and-ink base with a blue accent for data, and amber as the single warm highlight. Values marked with a CSS variable are read live from <code>:root</code> in <code>styles.css</code>.</p>
+          </header>
+          <div class="kit-sub"><h3>Brand</h3><div class="kit-swatches" data-sw="brand"></div></div>
+          <div class="kit-sub"><h3>Text &amp; neutral</h3><div class="kit-swatches" data-sw="text"></div></div>
+          <div class="kit-sub"><h3>Surfaces &amp; lines</h3><div class="kit-swatches" data-sw="surface"></div></div>
+          <div class="kit-sub"><h3>Status</h3><div class="kit-swatches" data-sw="status"></div></div>
+          <div class="kit-sub"><h3>Metric categories <small>Load · Contacted · Interest</small></h3><div class="kit-swatches" data-sw="metric"></div></div>
+        </section>
+
+        <!-- ============ TYPOGRAPHY ============ -->
+        <section class="kit-sec" id="typography">
+          <header>
+            <div class="eyebrow">Foundations</div>
+            <h2>Typography</h2>
+            <p>Poppins carries headings and big numbers; Inter handles everything you read or scan. Numbers always use tabular figures (<code>.num</code>) so columns line up.</p>
+          </header>
+          <div class="ty-fonts">
+            <div class="ty-font">
+              <span class="kit-label">Display · <code style="font-size:11px">--font-d</code></span>
+              <div class="aa" style="font-family:var(--font-d);font-weight:700">Aa</div>
+              <div style="font:700 20px/1.3 var(--font-d);color:var(--ink)">Poppins Bold</div>
+              <div class="gl" style="font-family:var(--font-d);font-weight:600">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</div>
+            </div>
+            <div class="ty-font">
+              <span class="kit-label">Interface · <code style="font-size:11px">--font-u</code></span>
+              <div class="aa" style="font-family:var(--font-u);font-weight:600">Aa</div>
+              <div style="font:600 20px/1.3 var(--font-u);color:var(--ink)">Inter Regular – Bold</div>
+              <div class="gl">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</div>
+            </div>
+          </div>
+          <div class="kit-sub">
+            <h3>Type scale</h3>
+            <div class="kit-demo flush col" id="typeScale"></div>
+          </div>
+        </section>
+
+        <!-- ============ RADIUS & SPACING ============ -->
+        <section class="kit-sec" id="shape">
+          <header>
+            <div class="eyebrow">Foundations</div>
+            <h2>Radius &amp; spacing</h2>
+            <p>Corners get rounder as surfaces get bigger: 8–14&nbsp;px for controls, 16–24&nbsp;px for cards and bars, 28&nbsp;px for hero surfaces, and a full pill for chips and nav actions.</p>
+          </header>
+          <div class="kit-sub"><h3>Corner radius</h3><div class="kit-demo"><div class="rd-grid" id="radiusGrid" style="width:100%"></div></div></div>
+          <div class="kit-sub"><h3>Spacing scale <small>gap / padding values in use</small></h3><div class="kit-demo col"><div class="sp-list" id="spacingList"></div></div></div>
+        </section>
+
+        <!-- ============ ELEVATION ============ -->
+        <section class="kit-sec" id="elevation">
+          <header>
+            <div class="eyebrow">Foundations</div>
+            <h2>Elevation</h2>
+            <p>Shadows are tinted with the navy/ink colour rather than pure black. Coloured shadows (amber, green) mark highlighted surfaces such as the active tab and the Interest KPI.</p>
+          </header>
+          <div class="kit-demo soft"><div class="sh-grid" id="shadowGrid" style="width:100%"></div></div>
+        </section>
+
+        <!-- ============ MOTION ============ -->
+        <section class="kit-sec" id="motion">
+          <header>
+            <div class="eyebrow">Foundations</div>
+            <h2>Motion</h2>
+            <p>Quick and decisive: press feedback in under 200&nbsp;ms, overlays around 250&nbsp;ms, and a slow entrance for page content. All of it switches off under <code>prefers-reduced-motion</code>.</p>
+          </header>
+          <div class="mo-grid" id="easeGrid"></div>
+          <div class="kit-sub">
+            <h3>Durations in use</h3>
+            <div class="mo-dur">
+              <span>Press / hover<em>150–200 ms</em></span>
+              <span>Pop-over<em>220 ms</em></span>
+              <span>Modal<em>350 ms</em></span>
+              <span>Tab indicator<em>450 ms</em></span>
+              <span>Content rise<em>600 ms · 70 ms stagger</em></span>
+              <span>Chart draw<em>1.4 s</em></span>
+              <span>Skeleton shimmer<em>1.4 s loop</em></span>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ BUTTONS ============ -->
+        <section class="kit-sec" id="buttons">
+          <header>
+            <div class="eyebrow">Components</div>
+            <h2>Buttons</h2>
+            <p>Navy is the primary action colour. White-on-navy pills live in the top bar. Every button scales to 97–98% on press and gets a visible blue focus ring from the keyboard.</p>
+          </header>
+
+          <div class="kit-sub">
+            <h3>Primary &amp; secondary</h3>
+            <div class="kit-demo">
+              <div class="kit-cap"><button class="btn-login" type="button"><span class="spin" aria-hidden="true"></span><span>LOG IN</span><svg class="arr" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></button><small><code>.btn-login</code> · 54 px</small></div>
+              <div class="kit-cap"><button class="btn-login busy" type="button" disabled><span class="spin" aria-hidden="true"></span><span>SIGNING IN</span><svg class="arr" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></button><small><code>.btn-login.busy</code> · loading</small></div>
+              <div class="kit-cap"><button class="btn-dl" type="button"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v8M4.5 7 8 10.5 11.5 7M3 13.5h10"/></svg>Download CSV</button><small><code>.btn-dl</code></small></div>
+              <div class="kit-cap"><button class="btn-dl btn-ghost" type="button"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v8M4.5 7 8 10.5 11.5 7M3 13.5h10"/></svg>Download CSV</button><small><code>.btn-dl.btn-ghost</code></small></div>
+              <div class="kit-cap" style="width:280px"><div class="m-btns" style="width:100%"><button class="m-cancel" type="button">Cancel</button><button class="m-ok" type="button">Log out</button></div><small><code>.m-cancel</code> + <code>.m-ok</code> · 48 px</small></div>
+            </div>
+          </div>
+
+          <div class="kit-sub">
+            <h3>On the navy bar</h3>
+            <div class="kit-demo dark">
+              <div class="kit-cap"><button class="btn-logout" type="button"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 2.5h-2a1.5 1.5 0 0 0-1.5 1.5v8a1.5 1.5 0 0 0 1.5 1.5h2M10 5l3 3-3 3M13 8H6.5"/></svg>Logout</button><small><code>.btn-logout</code></small></div>
+              <div class="kit-cap"><button class="pill num" type="button">2026-11-03</button><small><code>button.pill</code></small></div>
+              <div class="kit-cap"><button class="pill" type="button" aria-expanded="false" id="pillChev"><span>MUF TELESALES</span><svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 6l4.5 4.5L12.5 6"/></svg></button><small><code>.pill</code> + <code>.chev</code> · click to toggle</small></div>
+              <div class="kit-cap"><div class="pill"><span class="dot"></span><span>LAST UPDATE : 14:03:29</span></div><small><code>.pill .dot</code> · status</small></div>
+            </div>
+          </div>
+
+          <div class="kit-sub">
+            <h3>Small controls</h3>
+            <div class="kit-demo">
+              <div class="kit-cap"><div style="display:flex;gap:8px"><button class="dp-b" type="button" aria-label="Previous month">‹</button><button class="dp-b" type="button" aria-label="Next month">›</button><button class="dp-b" type="button" disabled aria-label="Disabled">›</button></div><small><code>.dp-b</code> · 32 px</small></div>
+              <div class="kit-cap"><button class="dp-t" type="button">Today</button><small><code>.dp-t</code></small></div>
+              <div class="kit-cap"><button class="eye" type="button" aria-label="Show password"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.8 10S5 4.5 10 4.5 18.2 10 18.2 10 15 15.5 10 15.5 1.8 10 1.8 10Z"/><circle cx="10" cy="10" r="2.4"/></svg></button><small><code>.eye</code> · icon button</small></div>
+            </div>
+          </div>
+
+          <div class="kit-spec-wrap"><table class="kit-spec">
+            <thead><tr><th>Button</th><th>Size</th><th>Radius</th><th>Fill</th><th>Use for</th></tr></thead>
+            <tbody>
+              <tr><td><b>Primary</b> <code>.btn-login</code></td><td>54 px tall</td><td>16</td><td>Navy · amber arrow</td><td>Page-level submit</td></tr>
+              <tr><td><b>Download</b> <code>.btn-dl</code></td><td>10 × 16 padding</td><td>12</td><td>Navy</td><td>Panel actions</td></tr>
+              <tr><td><b>Ghost</b> <code>.btn-ghost</code></td><td>same as download</td><td>12</td><td>#EEF3FF · blue text</td><td>Lower-emphasis panel action</td></tr>
+              <tr><td><b>Modal</b> <code>.m-btns button</code></td><td>48 px tall</td><td>14</td><td>Navy / #EEF3FF</td><td>Confirm / cancel</td></tr>
+              <tr><td><b>Nav pill</b> <code>.pill</code></td><td>10 × 16 padding</td><td>999</td><td>White 10%</td><td>Filters in the top bar</td></tr>
+              <tr><td><b>Logout</b> <code>.btn-logout</code></td><td>10 × 16 padding</td><td>999</td><td>White</td><td>Primary action on navy</td></tr>
+            </tbody>
+          </table></div>
+        </section>
+
+        <!-- ============ FORMS ============ -->
+        <section class="kit-sec" id="forms">
+          <header>
+            <div class="eyebrow">Components</div>
+            <h2>Form fields</h2>
+            <p>Fields sit on a soft tint and lift to white with a blue ring on focus. Errors turn the border red and shake once. Try typing in the fields below.</p>
+          </header>
+          <div class="kit-3col">
+            <div class="kit-demo col soft">
+              <div class="field"><label for="kf1">Username</label>
+                <div class="input"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="7" r="3.5"/><path d="M3.5 17c.6-3.2 3.2-5 6.5-5s5.9 1.8 6.5 5"/></svg><input id="kf1" type="text" placeholder="Enter your username" spellcheck="false"></div>
+              </div>
+              <small class="kit-note"><code>.field</code> › <code>.input</code> · default → focus</small>
+            </div>
+            <div class="kit-demo col soft">
+              <div class="field"><label for="kf2">Password</label>
+                <div class="input"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="9" width="12" height="8" rx="2.2"/><path d="M7 9V6.5a3 3 0 0 1 6 0V9"/></svg><input id="kf2" type="password" value="demo-password"><button type="button" class="eye" id="kitEye" aria-label="Show password" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.8 10S5 4.5 10 4.5 18.2 10 18.2 10 15 15.5 10 15.5 1.8 10 1.8 10Z"/><circle cx="10" cy="10" r="2.4"/></svg></button></div>
+              </div>
+              <small class="kit-note">With trailing <code>.eye</code> toggle</small>
+            </div>
+            <div class="kit-demo col soft">
+              <div class="field"><label for="kf3">Username</label>
+                <div class="input err"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="7" r="3.5"/><path d="M3.5 17c.6-3.2 3.2-5 6.5-5s5.9 1.8 6.5 5"/></svg><input id="kf3" type="text" placeholder="Enter your username"></div>
+                <div class="field-err" role="alert">Please enter your username.</div>
+              </div>
+              <small class="kit-note"><code>.input.err</code> + <code>.field-err</code></small>
+            </div>
+          </div>
+          <div class="kit-sub">
+            <h3>Search</h3>
+            <div class="kit-demo">
+              <div class="kit-cap"><label class="search"><span class="sr">Search agent name</span><input type="search" placeholder="Search agent name…" autocomplete="off" spellcheck="false"><span class="kbd" aria-hidden="true">/</span></label><small><code>.search</code> · grows from 240 → 300 px on focus · <code>.kbd</code> shortcut hint</small></div>
+            </div>
+          </div>
+          <div class="kit-sub">
+            <h3>Login card <small>pattern</small></h3>
+            <div class="kit-demo soft" style="justify-content:center;padding:32px 16px">
+              <section class="login-card" aria-label="Login card example">
+                <img class="login-art" src="assets/login-art.png" width="192" height="136" alt="">
+                <div class="login-head"><h1>Welcome back</h1><p>Log in to your performance dashboard</p></div>
+                <form class="login-form" onsubmit="return false" novalidate>
+                  <div class="field"><label for="kl1">Username</label>
+                    <div class="input"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="7" r="3.5"/><path d="M3.5 17c.6-3.2 3.2-5 6.5-5s5.9 1.8 6.5 5"/></svg><input id="kl1" type="text" placeholder="Enter your username" value="k.developer" spellcheck="false"></div>
+                  </div>
+                  <div class="field"><label for="kl2">Password</label>
+                    <div class="input"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="9" width="12" height="8" rx="2.2"/><path d="M7 9V6.5a3 3 0 0 1 6 0V9"/></svg><input id="kl2" type="password" value="demo-password"></div>
+                  </div>
+                  <button class="btn-login" type="submit" style="width:100%"><span class="spin" aria-hidden="true"></span><span>LOG IN</span><svg class="arr" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></button>
+                </form>
+                <p class="login-help">Having trouble? Contact your administrator.</p>
+              </section>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ BADGES ============ -->
+        <section class="kit-sec" id="badges">
+          <header>
+            <div class="eyebrow">Components</div>
+            <h2>Chips &amp; badges</h2>
+            <p>Small status markers. The blue / cyan / amber trio always means Load / Contacted / Interest, wherever it appears.</p>
+          </header>
+          <div class="kit-sub">
+            <h3>Metric chips <small>KPI cards</small></h3>
+            <div class="kit-demo">
+              <div class="kit-cap"><span class="chip load"><i></i>Load</span><small><code>.chip.load</code></small></div>
+              <div class="kit-cap"><span class="chip con"><i></i>Contacted</span><small><code>.chip.con</code></small></div>
+              <div class="kit-cap"><span class="chip int"><i></i>Interest</span><small><code>.chip.int</code></small></div>
+              <div class="kit-cap"><span class="kpi-lbl">Avg idle time</span><small><code>.kpi-lbl</code></small></div>
+            </div>
+          </div>
+          <div class="kit-sub">
+            <h3>Delta <small>change vs. last month</small></h3>
+            <div class="kit-demo">
+              <div class="kit-cap"><span class="delta good"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M5 1.5l4 7H1z" fill="currentColor"/></svg>+1,602</span><small><code>.delta.good</code></small></div>
+              <div class="kit-cap"><span class="delta bad"><svg viewBox="0 0 10 10" aria-hidden="true" style="transform:rotate(180deg)"><path d="M5 1.5l4 7H1z" fill="currentColor"/></svg>-485</span><small><code>.delta.bad</code></small></div>
+              <div class="kit-cap"><span class="sd n"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M5 1.5l4 7H1z" fill="currentColor"/></svg>00:00:23</span><small><code>.sd.n</code></small></div>
+              <div class="kit-cap"><span class="sd r"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M5 1.5l4 7H1z" fill="currentColor"/></svg>00:06:24</span><small><code>.sd.r</code></small></div>
+              <div class="kit-cap"><span class="sd gr"><svg viewBox="0 0 10 10" aria-hidden="true" style="transform:rotate(180deg)"><path d="M5 1.5l4 7H1z" fill="currentColor"/></svg>00:01:36</span><small><code>.sd.gr</code></small></div>
+            </div>
+          </div>
+          <div class="kit-sub">
+            <h3>Table &amp; label badges</h3>
+            <div class="kit-demo">
+              <div class="kit-cap"><span class="count">48 agents</span><small><code>.count</code></small></div>
+              <div class="kit-cap"><span class="chip-soft">Calls per hour</span><small><code>.chip-soft</code></small></div>
+              <div class="kit-cap"><span class="badge">1</span><small><code>.badge</code> · rank</small></div>
+              <div class="kit-cap"><span class="ipill">3</span><small><code>.ipill</code></small></div>
+              <div class="kit-cap"><span class="rep">8.5 / 9.0 / 8.2</span><small><code>.rep</code></small></div>
+              <div class="kit-cap"><span class="d-date">2026-11-03 <span class="tag">Today</span></span><small><code>.tag</code></small></div>
+              <div class="kit-cap"><span class="d-date lm">2026-10-03 <span class="tag lm">Last month</span></span><small><code>.tag.lm</code></small></div>
+              <div class="kit-cap"><span class="idl hot">01:48:42</span><small><code>.idl.hot</code> · &gt; 1 h</small></div>
+              <div class="kit-cap"><span class="hint">Sorted by Load</span><small><code>.hint</code></small></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ TABS ============ -->
+        <section class="kit-sec" id="tabs">
+          <header>
+            <div class="eyebrow">Components</div>
+            <h2>Tabs</h2>
+            <p>A segmented control with a sliding amber indicator. Use ← → to move between tabs from the keyboard.</p>
+          </header>
+          <div class="kit-demo col">
+            <div class="ph" style="width:100%">
+              <div class="ph-l"><div class="eyebrow">Sunday, 22 November 2026</div><h1 class="title">Performance Overview</h1></div>
+              <div class="tabs" id="kitTabs" role="tablist" aria-label="Team leader">
+                <span class="tab-ind" id="kitTabInd" aria-hidden="true"></span>
+                <button class="tab" role="tab" aria-selected="true" data-tab="0" type="button">Summary</button>
+                <button class="tab" role="tab" aria-selected="false" data-tab="1" type="button">TL 1</button>
+                <button class="tab" role="tab" aria-selected="false" data-tab="2" type="button">TL 2</button>
+                <button class="tab" role="tab" aria-selected="false" data-tab="3" type="button">TL 3</button>
+              </div>
+            </div>
+            <small class="kit-note">Page header: <code>.ph</code> › <code>.eyebrow</code> + <code>.title</code> + <code>.tabs</code></small>
+          </div>
+        </section>
+
+        <!-- ============ NAVIGATION ============ -->
+        <section class="kit-sec" id="navigation">
+          <header>
+            <div class="eyebrow">Components</div>
+            <h2>Navigation bar</h2>
+            <p>The sticky navy bar combines the brand mark, live status, and the global filters. Secondary pills hide on small screens so Logout always stays reachable.</p>
+          </header>
+          <div class="kit-demo flush" style="padding:24px">
+            <header class="nav">
+              <div class="brand">
+                <div class="logo" aria-hidden="true">B</div>
+                <div class="brand-t"><div class="brand-n">Beyond Client</div><div class="brand-s">MUF Telesales Dashboard</div></div>
+              </div>
+              <div class="nav-right">
+                <div class="pill opt"><span class="dot"></span><span>LAST UPDATE : 14:03:29</span></div>
+                <div class="pill opt opt2">MUF</div>
+                <button class="pill num" type="button">2026-11-03</button>
+                <button class="pill" type="button"><span>MUF TELESALES</span><svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 6l4.5 4.5L12.5 6"/></svg></button>
+                <button class="btn-logout" type="button"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 2.5h-2a1.5 1.5 0 0 0-1.5 1.5v8a1.5 1.5 0 0 0 1.5 1.5h2M10 5l3 3-3 3M13 8H6.5"/></svg>Logout</button>
+              </div>
+            </header>
+          </div>
+          <div class="kit-sub">
+            <h3>Brand mark</h3>
+            <div class="kit-demo dark">
+              <div class="kit-cap"><div class="logo" aria-hidden="true" style="width:56px;height:56px;border-radius:17px;font-size:28px">B</div><small><code>.logo</code> · gradient #FFE27A → #FFB800</small></div>
+              <div class="kit-cap"><div class="logo" aria-hidden="true">B</div><small>36 px · in the bar</small></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ KPI ============ -->
+        <section class="kit-sec" id="kpi">
+          <header>
+            <div class="eyebrow">Components</div>
+            <h2>KPI cards</h2>
+            <p>Four cards across the top of the dashboard. The Interest card is the only one with a filled gradient — it's the number the team is chasing.</p>
+          </header>
+          <div class="kit-demo soft">
+            <section class="kpis" aria-label="Key metrics example">
+              <article class="card kpi">
+                <div class="kpi-top"><span class="chip load"><i></i>Load</span><span class="delta good"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M5 1.5l4 7H1z" fill="currentColor"/></svg>+1,602</span></div>
+                <div class="kpi-val">7,103</div>
+                <div class="kpi-bot"><span class="kpi-rate">Work 7,103 · 100%</span><span class="kpi-cmp">vs 5,501 last month</span></div>
+              </article>
+              <article class="card kpi">
+                <div class="kpi-top"><span class="chip con"><i></i>Contacted</span><span class="delta bad"><svg viewBox="0 0 10 10" aria-hidden="true" style="transform:rotate(180deg)"><path d="M5 1.5l4 7H1z" fill="currentColor"/></svg>-485</span></div>
+                <div class="kpi-val">1,244</div>
+                <div class="kpi-bot"><span class="kpi-rate">17.51% contact rate</span><span class="kpi-cmp">vs 1,729 (31.43%)</span></div>
+              </article>
+              <article class="card kpi hero">
+                <div class="kpi-top"><span class="chip int"><i></i>Interest</span><span class="delta good"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M5 1.5l4 7H1z" fill="currentColor"/></svg>+3</span></div>
+                <div class="kpi-val">31</div>
+                <div class="kpi-bot"><span class="kpi-rate">2.49% interest rate</span><span class="kpi-cmp">vs 28 (1.62%)</span></div>
+              </article>
+              <article class="card kpi">
+                <div class="kpi-top"><span class="kpi-lbl">Avg idle time</span><span class="delta bad"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M5 1.5l4 7H1z" fill="currentColor"/></svg>+00:06:24</span></div>
+                <div class="kpi-val num">00:17:31</div>
+                <div class="kpi-bot"><span class="kpi-rate">Avg release 00:49:48</span><span class="kpi-cmp">vs 00:11:07</span></div>
+              </article>
+            </section>
+          </div>
+          <p class="kit-note">Structure: <code>.card.kpi</code> › <code>.kpi-top</code> (chip + delta) · <code>.kpi-val</code> (Poppins 44) · <code>.kpi-bot</code> (rate + comparison). Add <code>.hero</code> for the green gradient.</p>
+        </section>
+
+        <!-- ============ TILES ============ -->
+        <section class="kit-sec" id="tiles">
+          <header>
+            <div class="eyebrow">Components</div>
+            <h2>Time tiles</h2>
+            <p>Compact stat tiles for durations. The first tile uses a blue tint to mark the headline value.</p>
+          </header>
+          <div class="kit-demo soft">
+            <section class="card ta">
+              <div class="ta-h"><h2>Time Average</h2><span>Average duration per agent today</span></div>
+              <div class="tiles">
+                <div class="tile first"><b>Login</b><span>04:09:21</span></div>
+                <div class="tile"><b>Work</b><span>00:01:06</span></div>
+                <div class="tile"><b>Oncall</b><span>00:01:02</span></div>
+                <div class="tile"><b>Idle</b><span>00:00:04</span></div>
+                <div class="tile"><b>Coaching</b><span>00:00:00</span></div>
+                <div class="tile"><b>Pray</b><span>00:04:37</span></div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <!-- ============ TABLES ============ -->
+        <section class="kit-sec" id="tables">
+          <header>
+            <div class="eyebrow">Components</div>
+            <h2>Tables</h2>
+            <p>Tables are CSS grids rather than <code>&lt;table&gt;</code> elements, with <code>role="table"</code> for assistive tech. Metric columns carry their category tint all the way down the column.</p>
+          </header>
+          <div class="kit-sub">
+            <h3>Panel with agent table</h3>
+            <div class="kit-demo soft">
+              <section class="card panel">
+                <div class="ph2"><div class="ph2-l"><h2>Performance Agent</h2><span class="count">3 agents</span><span class="hint">Sorted by Load</span></div>
+                  <div class="ph2-r"><label class="search"><span class="sr">Search agent name</span><input type="search" placeholder="Search agent name…" autocomplete="off"><span class="kbd" aria-hidden="true">/</span></label>
+                  <button class="btn-dl" type="button"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v8M4.5 7 8 10.5 11.5 7M3 13.5h10"/></svg>Download CSV</button></div></div>
+                <div class="tscroll"><div class="tbl t-agent" role="table">
+                  <div class="tr th" role="row"><div>#</div><div>TL Name</div><div class="c-load"><i class="d" style="background:#2F6BFF"></i>Load</div><div class="c-con"><i class="d" style="background:#00A3E0"></i>Contacted</div><div class="c-int"><i class="d" style="background:#F5A700"></i>Interest</div><div>PPD Interest</div><div>Total Call</div><div class="th-rep">Repetition<small>T1 / T2 / T3</small></div><div>Release Time</div><div>Idle Time</div></div>
+                  <div class="tr td" role="row"><div><span class="badge">1</span></div><div><span class="nm">LATIFAH FITRI NAYLA</span></div><div class="s-load">146</div><div class="s-con"><b>28</b><span>19.18%</span></div><div class="s-int"><span class="z">0</span><span class="z">0.00%</span></div><div><span class="ppd">0</span></div><div><span class="tot">218</span></div><div><span class="rep">8.5 / 9.0 / 8.2</span></div><div><span class="rel">00:47:25</span></div><div><span class="idl">00:02:31</span></div></div>
+                  <div class="tr td" role="row"><div><span class="badge">2</span></div><div><span class="nm">RR Fausta Xeviera Estuningtyas</span></div><div class="s-load">146</div><div class="s-con"><b>25</b><span>17.12%</span></div><div class="s-int"><span class="ipill">1</span><span class="ir">0.68%</span></div><div><span class="ppd">0</span></div><div><span class="tot">343</span></div><div><span class="rep">9.1 / 8.7 / 9.3</span></div><div><span class="rel">00:55:09</span></div><div><span class="idl">00:01:27</span></div></div>
+                  <div class="tr td" role="row"><div><span class="badge">3</span></div><div><span class="nm">Bunga Ratulangi</span></div><div class="s-load">145</div><div class="s-con"><b>12</b><span>8.28%</span></div><div class="s-int"><span class="z">0</span><span class="z">0.00%</span></div><div><span class="ppd">0</span></div><div><span class="tot">302</span></div><div><span class="rep">6.9 / 7.2 / 7.5</span></div><div><span class="rel">00:41:22</span></div><div><span class="idl hot">01:48:42</span></div></div>
+                </div></div>
+                <div class="t-foot">Showing all 3 agents</div>
+              </section>
+            </div>
+          </div>
+          <div class="kit-sub">
+            <h3>Comparison table</h3>
+            <div class="kit-demo soft">
+              <section class="card panel">
+                <div class="ph2"><div class="ph2-l"><h2>Detailed Performance</h2><span class="hint">Today vs. same day last month</span></div></div>
+                <div class="tscroll"><div class="tbl t-det" role="table">
+                  <div class="tr th" role="row"><div>Date</div><div>PPD Interest</div><div>Avg Release Time</div><div>Avg Idle Time</div></div>
+                  <div class="tr td" role="row"><div><span class="d-date">2026-11-03 <span class="tag">Today</span></span></div><div><span class="d-v g">0</span></div><div><span class="d-v">00:49:48</span></div><div><span class="d-v">00:17:31</span></div></div>
+                  <div class="tr td" role="row"><div><span class="d-date lm">2026-10-03 <span class="tag lm">Last month</span></span></div><div><span class="d-v g">0</span></div><div><span class="d-v lm">00:49:25</span></div><div><span class="d-v lm">00:11:07</span></div></div>
+                  <div class="tr td row-sd" role="row"><div><span class="sd-l"><b>SUR/DEF</b><span>Surplus / deficit</span></span></div><div><span class="d-v g">0</span></div><div><span class="sd n"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M5 1.5l4 7H1z" fill="currentColor"/></svg>00:00:23</span></div><div><span class="sd r"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M5 1.5l4 7H1z" fill="currentColor"/></svg>00:06:24</span></div></div>
+                </div></div>
+              </section>
+            </div>
+          </div>
+          <div class="kit-sub">
+            <h3>Empty state</h3>
+            <div class="kit-demo soft">
+              <section class="card panel">
+                <div class="tscroll"><div class="tbl t-touch" role="table" style="min-width:0">
+                  <div class="t-empty"><b>No contract repeats yet</b><span>Agents who touch a contract more than once will appear here.</span></div>
+                </div></div>
+              </section>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ HEATMAP ============ -->
+        <section class="kit-sec" id="heatmap">
+          <header>
+            <div class="eyebrow">Components</div>
+            <h2>Heatmap</h2>
+            <p>Hourly volume is shown as blue intensity: the more calls, the deeper the cell. Text flips to white on the darkest bucket. Zero stays a quiet grey so empty hours don't draw the eye.</p>
+          </header>
+          <div class="kit-demo soft">
+            <section class="card panel">
+              <div class="ph2"><div class="ph2-l"><h2>Performance Call</h2><span class="chip-soft">Calls per hour</span></div>
+                <div class="legend" aria-hidden="true">Quiet <i></i> Busy</div></div>
+              <div class="tscroll"><div class="tbl t-heat" role="table" id="heatDemo"></div></div>
+            </section>
+          </div>
+          <div class="kit-sub">
+            <h3>Intensity buckets <small>calls per hour</small></h3>
+            <div class="kit-demo" id="heatScale"></div>
+          </div>
+        </section>
+
+        <!-- ============ CHARTS ============ -->
+        <section class="kit-sec" id="charts">
+          <header>
+            <div class="eyebrow">Components</div>
+            <h2>Charts</h2>
+            <p>Lines are drawn in the same blue (primary series) and amber (secondary series) used for Load and Interest. The blue line gets a soft gradient area and a hover tooltip on a navy chip.</p>
+          </header>
+          <div class="kit-demo soft">
+            <section class="charts" style="grid-template-columns:1fr">
+              <article class="card chart">
+                <div class="ch-h"><div><h2>CTC &amp; Interest</h2><p>Daily · Last 30 days</p></div>
+                  <div class="lg"><span style="color:#0A1A4F"><i style="background:#2F6BFF"></i>CTC (left)</span><span style="color:#B07A00"><i style="background:#F5A700"></i>Interest (right)</span></div></div>
+                <div class="pw" style="overflow-x:auto"><div class="plot">
+                  <svg viewBox="0 0 638 262" role="img" aria-label="Sample line chart">
+                    <defs><linearGradient id="kg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2F6BFF" stop-opacity=".251"/><stop offset="1" stop-color="#2F6BFF" stop-opacity="0"/></linearGradient></defs>
+                    <g stroke="rgba(10,26,79,.08)"><line x1="44" x2="596" y1="60" y2="60"/><line x1="44" x2="596" y1="100" y2="100"/><line x1="44" x2="596" y1="140" y2="140"/><line x1="44" x2="596" y1="180" y2="180"/></g>
+                    <line x1="44" x2="596" y1="220" y2="220" stroke="rgba(10,26,79,.16)"/>
+                    <g text-anchor="end" dominant-baseline="central"><text x="36" y="60">2.4k</text><text x="36" y="100">1.8k</text><text x="36" y="140">1.2k</text><text x="36" y="180">600</text><text x="36" y="220">0</text></g>
+                    <g dominant-baseline="central" style="fill:#B07A00"><text x="604" y="60">120</text><text x="604" y="100">90</text><text x="604" y="140">60</text><text x="604" y="180">30</text><text x="604" y="220">0</text></g>
+                    <g text-anchor="middle" dominant-baseline="central"><text x="52" y="239">Oct 5</text><text x="237" y="239">Oct 15</text><text x="422" y="239">Oct 25</text><text x="588" y="239" style="fill:#0A1A4F;font-weight:700">Nov 3</text></g>
+                    <line x1="588" x2="588" y1="32" y2="220" stroke="rgba(10,26,79,.2)" stroke-dasharray="3 3"/>
+                    <path transform="translate(52 92)" d="M0 56C48 56 70 20 122 28S210 70 262 46S350 0 410 10S500 40 536 30L536 128L0 128L0 56Z" fill="url(#kg)"/>
+                    <path transform="translate(52 165.3)" d="M0 24C48 24 70 8 122 12S210 34 262 24S350 2 410 6S500 20 536 14" fill="none" stroke="#F5A700" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path transform="translate(52 92)" d="M0 56C48 56 70 20 122 28S210 70 262 46S350 0 410 10S500 40 536 30" fill="none" stroke="#2F6BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="462" cy="102" r="3.75" fill="#fff" stroke="#2F6BFF" stroke-width="2.5"/><text x="462" y="85" text-anchor="middle" dominant-baseline="central" style="fill:#1E4FE0;font-weight:700">Peak 1,920</text>
+                    <circle cx="588" cy="122" r="4.5" fill="#2F6BFF" stroke="#fff" stroke-width="3" style="filter:drop-shadow(0 2px 4px rgba(47,107,255,.5))"/>
+                    <circle cx="588" cy="179.3" r="4" fill="#F5A700" stroke="#fff" stroke-width="2.5"/>
+                  </svg>
+                </div></div>
+              </article>
+            </section>
+          </div>
+          <div class="kit-sub">
+            <h3>Tooltip</h3>
+            <div class="kit-demo">
+              <div class="kit-cap"><div class="tip"><small>TODAY · 3 NOV</small><span>1,244 <em>CTC</em></span><span>31 <em>Interest</em></span></div><small><code>.tip</code> · navy chip, follows the cursor on the real chart</small></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ OVERLAYS ============ -->
+        <section class="kit-sec" id="overlays">
+          <header>
+            <div class="eyebrow">Components</div>
+            <h2>Overlays</h2>
+            <p>Menus, the date picker, the confirmation modal and toasts. The static previews below are the real components; use the buttons to see the live behaviour including the entrance animation.</p>
+          </header>
+          <div class="kit-2col">
+            <div class="kit-sub">
+              <h3>Menu</h3>
+              <div class="kit-demo soft" style="min-height:240px;align-items:flex-start">
+                <div class="pop menu" role="menu">
+                  <button class="mi" role="menuitemradio" aria-checked="true" type="button"><span>MUF TELESALES</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5 6.5 12 13 4.5"/></svg></button>
+                  <button class="mi" role="menuitemradio" aria-checked="false" type="button"><span>MUF COLLECTION</span></button>
+                  <button class="mi" role="menuitemradio" aria-checked="false" type="button"><span>MUF RETENTION</span></button>
+                  <button class="mi" role="menuitemradio" aria-checked="false" type="button"><span>MUF WELCOME CALL</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="kit-sub">
+              <h3>Date picker</h3>
+              <div class="kit-demo soft" style="align-items:flex-start"><div class="pop dpick" id="dpDemo" role="dialog" aria-label="Choose date"></div></div>
+            </div>
+          </div>
+          <div class="kit-2col">
+            <div class="kit-sub">
+              <h3>Modal</h3>
+              <div class="kit-demo col" style="padding:16px">
+                <div class="kit-modalwrap">
+                  <div class="modal" role="alertdialog" aria-labelledby="mT0" aria-describedby="mP0">
+                    <div class="m-ico"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 2.5h-2a1.5 1.5 0 0 0-1.5 1.5v8a1.5 1.5 0 0 0 1.5 1.5h2M10 5l3 3-3 3M13 8H6.5"/></svg></div>
+                    <h3 id="mT0">Log out?</h3><p id="mP0">You'll need to log in again to access the performance dashboard.</p>
+                    <div class="m-btns"><button class="m-cancel" type="button">Cancel</button><button class="m-ok" type="button">Log out</button></div>
+                  </div>
+                </div>
+                <div><button class="btn-dl btn-ghost" type="button" id="kitOpenModal">Open live modal</button></div>
+              </div>
+            </div>
+            <div class="kit-sub">
+              <h3>Toast</h3>
+              <div class="kit-demo col">
+                <div class="toast" role="status">
+                  <div class="toast-i"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:#fff"><path d="M3 8.5 6.5 12 13 4.5"/></svg></div>
+                  <div class="toast-t"><b>Download started</b><span>performance_agent_2026-11-03.csv</span></div>
+                  <div class="toast-bar"></div>
+                </div>
+                <div><button class="btn-dl btn-ghost" type="button" id="kitShowToast">Show live toast</button></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ LOADING ============ -->
+        <section class="kit-sec" id="loading">
+          <header>
+            <div class="eyebrow">Components</div>
+            <h2>Loading</h2>
+            <p>Skeletons reproduce the real layout so nothing jumps when data arrives. A light shimmer sweeps across; on the navy bar the shimmer is inverted.</p>
+          </header>
+          <div class="kit-2col">
+            <div class="kit-sub">
+              <h3>Card skeleton</h3>
+              <div class="kit-demo soft">
+                <div class="sk-box" style="height:173px;display:grid;gap:12px;align-content:space-between">
+                  <div style="display:flex;justify-content:space-between"><div class="sk" style="width:88px;height:24px;border-radius:999px"></div><div class="sk" style="width:64px;height:24px;border-radius:999px"></div></div>
+                  <div class="sk" style="width:62%;height:44px"></div>
+                  <div style="display:flex;justify-content:space-between"><div class="sk" style="width:42%;height:14px;border-radius:7px"></div><div class="sk" style="width:30%;height:14px;border-radius:7px"></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="kit-sub">
+              <h3>On navy <small><code>.sk.dark</code></small></h3>
+              <div class="kit-demo soft">
+                <div class="sk-nav" style="width:100%">
+                  <div style="display:flex;align-items:center;gap:12px"><div class="sk dark" style="width:36px;height:36px;border-radius:11px"></div><div style="display:grid;gap:6px"><div class="sk dark" style="width:110px;height:12px;border-radius:6px"></div><div class="sk dark" style="width:150px;height:10px;border-radius:5px"></div></div></div>
+                  <div style="display:flex;gap:10px"><div class="sk dark" style="width:60px;height:34px;border-radius:999px"></div><div class="sk dark" style="width:92px;height:34px;border-radius:999px"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="kit-sub">
+            <h3>Table rows</h3>
+            <div class="kit-demo soft">
+              <div class="sk-box" style="display:grid;gap:10px">
+                <div class="sk" style="width:240px;height:26px;border-radius:8px"></div>
+                <div class="sk" style="width:100%;height:44px;border-radius:14px"></div>
+                <div style="display:grid;grid-template-columns:40px 1fr 80px 120px 90px;gap:16px;align-items:center;height:46px"><div class="sk" style="width:28px;height:24px;border-radius:8px"></div><div class="sk" style="width:55%;height:14px;border-radius:7px"></div><div class="sk" style="width:48px;height:14px;border-radius:7px"></div><div class="sk" style="width:80px;height:14px;border-radius:7px"></div><div class="sk" style="width:60px;height:14px;border-radius:7px"></div></div>
+                <div style="display:grid;grid-template-columns:40px 1fr 80px 120px 90px;gap:16px;align-items:center;height:46px"><div class="sk" style="width:28px;height:24px;border-radius:8px"></div><div class="sk" style="width:55%;height:14px;border-radius:7px"></div><div class="sk" style="width:48px;height:14px;border-radius:7px"></div><div class="sk" style="width:80px;height:14px;border-radius:7px"></div><div class="sk" style="width:60px;height:14px;border-radius:7px"></div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ ICONS ============ -->
+        <section class="kit-sec" id="icons">
+          <header>
+            <div class="eyebrow">Components</div>
+            <h2>Icons</h2>
+            <p>Inline SVG with <code>stroke="currentColor"</code>, round caps and joins, so icons inherit text colour. Stroke weight is 1.7–2.2 depending on size. Click an icon to copy its SVG.</p>
+          </header>
+          <div class="ic-grid" id="iconGrid"></div>
+        </section>
+
+      </main>
+    </div>
+
+    <footer class="kit-foot">
+      <span>© 2026 Beyond Client · MUF Telesales · UI Kit v1.0</span>
+      <a class="foot-link" id="kitBack2" href="index.html">← Back to dashboard</a>
+    </footer>
+  </div>
+</div>
+
+<div id="layer"></div>
+<script src="ui-kit.js"></script>
+</body>
+</html>
